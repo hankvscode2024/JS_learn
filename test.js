@@ -22,3 +22,12 @@ let mux=multiply(10,8);
 console.log(mux+2);
 
 document.querySelector("h1").addEventListener("click",()=> {alert("don't  click me")});
+
+const myimage=document.querySelector("img");
+myimage.onclick= ()=>{
+  const  mysrc=myimage.getAttribute("src");
+  if (mysrc==="Harsh.jpg"){
+    myimage.setAttribute("src","Harsh2.jpg");
+    alert("image will be changed");
+  }
+}
